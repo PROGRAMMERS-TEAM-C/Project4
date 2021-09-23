@@ -68,11 +68,13 @@ $ roslaunch ar_project ar_config.launch
 - 시뮬레이터에서 dqn 네트워크를 사용해서 학습시킨 .pth 값을 사용해서 주행
 
 ### YOLO Driving
+![스크린샷, 2021-09-23 15-43-50](https://user-images.githubusercontent.com/67509269/134466682-395087d4-2a1d-49be-9bac-b510356c4aa9.png)
 
 - darknet_ros의 bounding_boxes토픽을 받아와서 인식한 이미지의 Class와 정답 Class가 일치하면 해당 이미지 방향의 각도를 계산한 후 이미지 쪽으로 주행.
 - 각도는 화면의 중앙과 bounding_box 중앙의 차이에 50만큼 곱하여 구함.(xycar의 최대 angle 토픽값 = 50)
 
 ### AR Parking
+![스크린샷, 2021-09-23 15-44-28](https://user-images.githubusercontent.com/67509269/134466700-255059ad-7a59-408e-a2e9-c725e1db8eab.png)
 
 - AR 태그가 보일 때까지 일정 거리동안 후진 및 전진
 - AR 태그까지의 x좌표 차이, z좌표 차이를 이용하여 arctan(dx/dz) 각도만큼 조향각을 주어 AR 태그의 일정 거리 앞에서 정지
