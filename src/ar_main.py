@@ -10,7 +10,6 @@ from darknet_ros_msgs.msg import BoundingBoxes
 from xycar_msgs.msg import xycar_motor
 import lidar_driving
 import ar_approach
-import ar_approach2
 import ar_turnback
 import dqn_drive_end
 import yolo_drive
@@ -139,7 +138,7 @@ def callback(data):
         print("start mode nine")
         for i in data.markers:
             if i.id == 9:
-                if ar_approach2.callback(data, 0.45, yoloobject):
+                if ar_approach.callback(data, 0.45, yoloobject):
                     runApproach2 = False
 
     elif mode == 0:
