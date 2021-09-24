@@ -3,7 +3,7 @@
 ## Video
 ---
 
-[![차선인식 주행 영상](https://img.youtube.com/vi/tXYGs7sStSA/1.jpg)](https://youtu.be/tXYGs7sStSA) 
+[![차선인식 주행 영상](https://img.youtube.com/vi/tXYGs7sStSA/0.jpg)](https://youtu.be/tXYGs7sStSA) 
 
 ## Goal
 ---
