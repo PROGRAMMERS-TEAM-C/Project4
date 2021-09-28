@@ -54,7 +54,7 @@ $ roslaunch ar_project ar_config.launch
 - /ar_pose_marker 토픽의 id값을 받아와 ar태그를 구분
 
 ### LiDAR Algorithm Driving
-<img src="./img/lidar.png" Width="640" Height="480"/>
+<img src="./img/lidar.png" Width="640" Height="320"/>
 
 - 전방 180도의 라이다 값을 다섯 부분으로 나눠 오른쪽이 왼쪽보다 더 크면 우회전, 왼쪽이 오른쪽보다 더 크면 좌회전, 앞 라이다 거리가 0.3 보다 작아지면 후진 하도록 함.
 - 코너마다 카운트를 세서 코너라고 인식했을 때는 앵글값과 속도값을 크게 줘서 구석으로 가지않고 빨리 빠져나가도록 함.
@@ -69,13 +69,13 @@ $ roslaunch ar_project ar_config.launch
 - 시뮬레이터에서 dqn 네트워크를 사용해서 학습시킨 .pth 값을 사용해서 주행
 
 ### YOLO Driving
-<img src="./img/yolo.png" Width="640" Height="480"/>
+<img src="./img/yolo.png" Width="640" Height="320"/>
 
 - darknet_ros의 bounding_boxes토픽을 받아와서 인식한 이미지의 Class와 정답 Class가 일치하면 해당 이미지 방향의 각도를 계산한 후 이미지 쪽으로 주행.
 - 각도는 화면의 중앙과 bounding_box 중앙의 차이에 50만큼 곱하여 구함.(xycar의 최대 angle 토픽값 = 50)
 
 ### AR Parking
-<img src="./img/ar_parking.png" Width="640" Height="480"/>
+<img src="./img/ar_parking.png" Width="640" Height="320"/>
 
 - AR 태그가 보일 때까지 일정 거리동안 후진 및 전진
 - AR 태그까지의 x좌표 차이, z좌표 차이를 이용하여 arctan(dx/dz) 각도만큼 조향각을 주어 AR 태그의 일정 거리 앞에서 정지
