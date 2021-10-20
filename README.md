@@ -5,6 +5,15 @@
 
 [![차선인식 주행 영상](https://img.youtube.com/vi/tXYGs7sStSA/0.jpg)](https://youtu.be/tXYGs7sStSA) 
 
+## Member Roles
+
+| 이름         | 담당                                         |
+| ------------ | :------------------------------------------- |
+| 조영진(팀장) | DQN, YOLO, AR 태그 인식 기능 구현 |
+| 구민상       | 라이다 인식 주행, 주차 기능, 모드 통합 구현 |
+| 고세람       | 라이다 인식 주행, 주차 기능, 모드 통합 구현 |
+| 임경묵       | DQN, YOLO, AR 태그 인식 기능 구현 |
+
 ## Goal
 ---
 ![image](https://user-images.githubusercontent.com/65532515/134160737-51b302eb-60bc-42e6-b3b6-248a266e1a76.png)  
